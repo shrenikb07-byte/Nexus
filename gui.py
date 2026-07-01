@@ -24,12 +24,23 @@ def main(page: ft.Page):
         padding=20,
         content=ft.Row(
             [
-                ft.Text(
-                    "🤖 Nexus",
-                    size=28,
-                    weight=ft.FontWeight.BOLD,
-                    color=TEXT,
-                ),
+                ft.Row(
+    [
+        ft.Image(
+            src="assets/logo.png",
+            width=42,
+            height=42,
+            fit=ft.ImageFit.CONTAIN,
+        ),
+        ft.Text(
+            "Nexus",
+            size=28,
+            weight=ft.FontWeight.BOLD,
+            color=TEXT,
+        ),
+    ],
+    spacing=15,
+)
             ],
             alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
         ),
